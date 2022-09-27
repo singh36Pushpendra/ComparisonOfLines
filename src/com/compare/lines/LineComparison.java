@@ -7,10 +7,10 @@ public class LineComparison {
     static double findLineLength() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter co-ordinates for two points:");
-        
+
         System.out.print("Enter x1 co-ordinate value: ");
         int x1 = scanner.nextInt();
-        
+
         System.out.print("Enter y1 co-ordinate value: ");
         int y1 = scanner.nextInt();
 
@@ -37,9 +37,12 @@ public class LineComparison {
 
         if (line1Length == line2Length) {
             System.out.println("Two lines are equal!");
+        } else if (line1Length > line2Length) {
+            System.out.println("Line 1 is greater than Line 2");
         } else {
-            System.out.println("Two lines are not equal!");
+            System.out.println("Line 2 is greater than Line 1");
         }
+        
         System.out.println("Length of a Line 1: " + line1Length);
         System.out.println("Length of a Line 2: " + line2Length);
     }
