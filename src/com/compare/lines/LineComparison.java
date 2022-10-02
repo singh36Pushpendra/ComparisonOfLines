@@ -37,19 +37,11 @@ public class LineComparison {
         double line1Length = findLineLength();
         double line2Length = findLineLength();
 
-        if (line1Length == line2Length) {
-            System.out.println("Two lines are equal!");
-        } else if (line1Length > line2Length) {
-            System.out.println("Line 1 is greater than Line 2");
-        } else {
-            System.out.println("Line 2 is greater than Line 1");
-        }
-        
         System.out.println("Length of a Line 1: " + line1Length);
         System.out.println("Length of a Line 2: " + line2Length);
         
-        Integer line1 = (int)line1Length;
-        Integer line2 = (int)line2Length;
+        Double line1 = line1Length;
+        Double line2 = line2Length;
         int offset = line1.compareTo(line2);
         
         System.out.println(offset);
