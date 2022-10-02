@@ -32,15 +32,15 @@ public class LineComparison {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Line Comparison Computation Program!");
-        double line1Length = findLineLength();
-        double line2Length = findLineLength();
+        Double line1 = findLineLength();
+        Double line2 = findLineLength();
 
-        if (line1Length == line2Length) {
+        if (line1.equals(line2)) {
             System.out.println("Two lines are equal!");
         } else {
             System.out.println("Two lines are not equal!");
         }
-        System.out.println("Length of a Line 1: " + line1Length);
-        System.out.println("Length of a Line 2: " + line2Length);
+        System.out.println("Length of a Line 1: " + line1);
+        System.out.println("Length of a Line 2: " + line2);
     }
 }
